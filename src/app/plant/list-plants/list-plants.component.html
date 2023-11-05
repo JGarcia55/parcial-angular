@@ -6,7 +6,7 @@
     <div class="col-8">
         <table class="table">
             <thead class="table-dark">
-            <tr>
+            <tr class="plant-title">
                 <th class="fw-bold">#</th>
                 <th>Nombre común</th>
                 <th>Tipo</th>
@@ -14,7 +14,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let plant of plants">
+            <tr class="plant-row" *ngFor="let plant of plants">
                 <td class="fw-bold">{{plant.id}}</td>
                 <td>{{plant.nombre_comun}}</td>
                 <td>{{plant.tipo}}</td>
@@ -30,6 +30,6 @@
 </section>
 <footer>
     <div class="text-center">
-        <p>Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio</p>
+        <p class="fw-bold">Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio</p>
     </div>
 </footer>

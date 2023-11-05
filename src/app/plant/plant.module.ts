@@ -4,7 +4,7 @@ import { ListPlantsComponent } from './list-plants/list-plants.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [ListPlantsComponent],
   exports: [ListPlantsComponent]
