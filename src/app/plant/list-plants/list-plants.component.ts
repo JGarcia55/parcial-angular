@@ -23,4 +23,14 @@ export class ListPlantsComponent implements OnInit {
     })
   }
 
+  getTotalInteriorPlant():number {
+    let aux_plants = this.plants.filter(plant => plant.tipo == 'Interior');
+    return aux_plants.reduce((acumulator, currentValue) => acumulator + 1 ,0);
+  }
+
+  getTotalExteriorPlant():number {
+    let aux_plants = this.plants.filter(plant => plant.tipo == 'Exterior');
+    return aux_plants.reduce((acumulator, currentValue) => acumulator + 1 ,0);
+  }
+
 }
