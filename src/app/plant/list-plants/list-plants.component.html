@@ -1,0 +1,26 @@
+<section class="container">
+    <h1>Vivero El Otoño</h1>
+    <hr>
+    <img class="img-fluid" src="/assets/img/plants-banner.jpg" alt="">
+    <hr>
+    <div class="col-8">
+        <table class="table">
+            <thead class="table-dark">
+            <tr>
+                <th class="fw-bold">#</th>
+                <th>Nombre común</th>
+                <th>Tipo</th>
+                <th>Clima</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let plant of plants">
+                <td class="fw-bold">{{plant.id}}</td>
+                <td>{{plant.nombre_comun}}</td>
+                <td>{{plant.tipo}}</td>
+                <td>{{plant.clima}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
